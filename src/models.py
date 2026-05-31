@@ -177,3 +177,12 @@ if __name__ == '__main__':
     print(f"LatentMapper: {one_hot.shape} → {out.shape}")
 
     print("\nAll architectures verified.")
+    
+# ============================================================
+# Class aliases — required for loading pkl files saved
+# in Colab where classes were named Generator_V2,
+# Discriminator_V2 and Classifier_V2
+# ============================================================
+Generator_V2     = Generator
+Discriminator_V2 = Discriminator
+Classifier_V2    = Classifier
